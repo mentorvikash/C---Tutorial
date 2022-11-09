@@ -1,0 +1,27 @@
+// jump and loops | break and continue
+// continue is used to skip to next iteration of loop
+// break is used to terminate the loop
+// suppost vikash want to go for shopping with friend but only allowed on even date and every time he go for shoping, spend 500 rs. if even print "you can go for shopping". Of if money end, "you can't affort to go outside"
+
+#include <iostream>
+using namespace std;
+int main(){
+    int date;
+    int pocket = 2000;
+    for (date = 1; date<30; date++){
+        if (date%2 != 0){
+            continue;
+        }
+        if (pocket == 0){
+            cout<<"you can't affort to go outside"<<endl;
+            break;
+        }
+        pocket = pocket - 500;
+        cout<<"you can go for shopping on "<<date<<endl;
+    
+    }
+    return 0;
+}
+
+============================
+
