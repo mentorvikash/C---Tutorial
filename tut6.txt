@@ -1,0 +1,66 @@
+// for loop | while loop | do while loop
+
+// print hello world n times; take input from user 
+#include <iostream>
+using namespace std;
+int main() {
+int n;
+cout<<"enter no of times you want to print hello world"<<endl;
+cin>>n;
+for(int i=1; i<=n;i++){
+    cout << "Hello world!" <<endl;
+}
+    
+    return 0;
+}
+
+==========================
+
+// take n as input and give sum of all number upto n.
+#include <iostream>
+using namespace std;
+int main() {
+    int n,i;
+    int sum = 0;
+    cout<<"enter any number: ";
+    cin>>n;
+    for (i=0 ;i<=n; i++){
+        sum = sum + i;
+    }
+    cout<<sum<<endl;
+    return 0;
+}
+
+============================
+
+// take n as input and give sum of all number upto n with while loop
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    int sum = 0;
+    int i = 0;
+    cout<<"enter any number: ";
+    cin>>n;
+    while(i<=n){
+        sum = sum + i;
+        i++;
+    }
+    cout<<sum<<endl;
+    return 0;
+}
+
+=================================
+// take n as input and give sum of all number upto n with while loop
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"enter any number: ";
+    cin>>n;
+do{
+    cout<<"enter any number: "<<endl;
+    cin>>n;
+} while(n>50);
+    return 0;
+}
